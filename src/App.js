@@ -4,7 +4,6 @@ import TaskList from "./components/taskList";
 import RemedialActions from "./components/remedialActions";
 import Home from "./components/home";
 import SwipeableDrawerComponent from "./components/swipeableDrawer/swipeableDrawer";
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {

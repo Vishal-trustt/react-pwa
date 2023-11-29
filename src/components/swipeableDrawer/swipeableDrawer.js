@@ -1,6 +1,5 @@
 import {
   Button,
-  Box,
   SwipeableDrawer,
   FormControl,
   InputLabel,

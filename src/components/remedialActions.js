@@ -7,7 +7,6 @@ import {
   Grid,
   InputLabel,
   MenuItem,
-  Paper,
   Select,
   Typography,
 } from "@mui/material";
@@ -25,11 +24,7 @@ import camIcon from "../assets/Vector.png";
 function RemedialActions() {
   const [selectedImages, setSelectedImages] = useState([]);
   const [imagePreviews, setImagePreviews] = useState([]);
-  const videoConstraints = {
-    width: 1280,
-    height: 720,
-    facingMode: "user",
-  };
+
   const handleImageChange = (e) => {
     console.log(e);
     const files = e.target.files;
@@ -185,7 +180,7 @@ function RemedialActions() {
                         style={{ maxHeight: "100px" }}
                       />
                       <button onClick={() => handleRemoveImage(index)}>
-                        <img src={cross} />
+                        <img src={cross} alt="remove" />
                       </button>
                     </div>
                   </Grid>
@@ -301,7 +296,7 @@ function RemedialActions() {
                     height: "120px",
                   }}
                 >
-                  <img src={camIcon} />
+                  <img src={camIcon} alt="camera" />
                   <p style={{ fontSize: "12px", marginTop: "10px" }}>
                     Tap to Capture Photo(s){" "}
                   </p>

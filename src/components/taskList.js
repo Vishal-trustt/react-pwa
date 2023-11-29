@@ -1,11 +1,8 @@
 import React from "react";
-import { Box, Button, Container, Grid, Paper, Typography } from "@mui/material";
+import { Box, Grid, Paper, Typography } from "@mui/material";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import profileImage from "../assets/Ellipse 9.png";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import PhoneIcon from "@mui/icons-material/Phone";
-import CheckIcon from "@mui/icons-material/Check";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import { styled } from "@mui/material/styles";
 import warningStateIcon from "../assets/State Icons=Warning.png";
 import markedIcon from "../assets/state_icon_marked.png";
@@ -147,7 +144,7 @@ function TaskList() {
                   </div>
                   <div style={{}}>{el.lable}</div>
                   <div className="flex ">
-                    {el?.status == "Completed" ? (
+                    {el?.status === "Completed" ? (
                       <img src={markedIcon} alt="Completed" className="pr-3" />
                     ) : (
                       <img
