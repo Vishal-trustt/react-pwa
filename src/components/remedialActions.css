@@ -1,0 +1,65 @@
+/* #inputField>input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 0%;
+    font: 400 0.8vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgba(0, 0, 0, 0.623);
+    background-color: rgb(255, 255, 255);
+   
+}
+/* #inputField{
+    display: flex;
+
+    width: 500px;
+    width: 500px;
+
+} */
+ /* input[type=file]
+{
+    color: #979797;
+    height: auto;
+    padding-left: 10px;
+    text-decoration: none;
+    background-image: url('../assets/addIcon.png');
+    background-repeat: ;
+    border-radius: 5px; 
+
+    border: 0;
+} */
+#addFile-icon{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+.imagePreview-box{
+    /* border: 1px solid bisque; */
+    /* background-color: #f5f5f5; */
+    border-radius: 5px;
+    display: inline-block;
+    /* margin: 5px; */
+  align-items: center;
+  width: auto;
+}
+.imagePreview-box>img{
+    border-radius: 5px
+}
+.imagePreview-box>button{
+    position: relative ;
+    color: red;
+    float: right;
+    top: -110px;
+    left: 10px;
+}
+.imagePreview-box>button>img{
+  width: 20px;
+  height: 20px;
+}
